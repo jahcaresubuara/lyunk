@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/fontawesome-free-6.7.0-web/fontawesome-free-6.7.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./styles/bootstrap-5.3.3-dist/bootstrap-5.3.3-dist/js/bootstrap.min.js">
+    <title>Lynk</title>
+   
+    <link rel="stylesheet" href="./sign.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script defer src="./main.js"></script>
+ </head>
+ <body>
+   
+    <div class="container" id="container">
+      <!-- Sign Up -->
+      <div class="form-container sign-up-container">
+        <form action="#">
+          <h1>Join Lynk</h1>
+          <div class="social-icons">
+            <a href="#"><i>f</i></a>
+            <a href="#"><i>G+</i></a>
+            <a href="#"><i>in</i></a>
+          </div>
+          <span>or use your email for registration</span>
+          <input type="text" placeholder="Name" />
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="./account.html" class="signbtn">Sign Up</a>
+        </form>
+      </div>
+    
+      <!-- Sign In -->
+      <div class="form-container sign-in-container">
+        <form action="#" class="fom">
+          <h1>Welcome Back</h1>
+          <div class="social-icons">
+            
+            <a href="#"><i>f</i></a>
+            <a href="#"><i>G+</i></a>
+            <a href="#"><i>in</i></a>
+          </div>
+          <span class="mb-3 fs-4">or</span>
+          <input type="email" placeholder="Email" />
+          <input type="password" placeholder="Password" />
+          <a href="./account.html" class="signbtn">Sign In</a>
+        </form>
+      </div>
+    
+      <!-- Overlay -->
+      <div class="overlay-container">
+        <div class="overlay">
+          <div class="overlay-panel overlay-left">
+            <h1>Already have a Lynk?</h1>
+            <p>Sign in to connect with people, share ideas, and build your network.</p>
+            <button onclick="togglePanel()">Sign In</button>
+          </div>
+          <div class="overlay-panel overlay-right">
+            <h1>New to Lynk?</h1>
+            <p>Create an account to discover a smarter way to stay connected.</p>
+            <button onclick="togglePanel()">Sign Up</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <script>
+      function togglePanel() {
+        const container = document.getElementById('container');
+        container.classList.toggle('right-panel-active');
+      }
+    </script>
+    
+
+
+
+
+
+
+
+    
+    
+  </body>
+</html>
