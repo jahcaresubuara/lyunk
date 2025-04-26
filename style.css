@@ -96,7 +96,7 @@ left: 0;          /* Ensure it stretches all the way from left to right */
 width: 100%;      /* Make the navbar stretch across the full width */
 z-index: 1000;    /* Ensure the navbar is always on top of other content */
 background-color: white; /* Optional: Add a background color if you want */
-padding: 10px 0;  Optional: Add padding for spacing inside the navbar
+padding: 10px 0;  
 }
 
 .nav-container {
